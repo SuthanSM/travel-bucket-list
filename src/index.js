@@ -15,6 +15,7 @@ root.render(
     <div className='container mt-3'>
       <App />
         <Routes>
+          <Route path='/' element={<ViewTravelPlans />} />
           <Route path='/login' element={<Login />} />
           <Route path='/home' element={<ViewTravelPlans />} />
           <Route path='/addplan' element={<AddTravelPlan />} />
