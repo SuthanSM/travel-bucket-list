@@ -1,0 +1,58 @@
+[
+    {
+      "title": "Kashmir",
+      "description": "Just a dummy travel plan to Kashmir",
+      "link": "https:/www.google.com",
+      "hashtags": "#india#northindia",
+      "isdone": "no"
+    },
+    {
+      "title": "Leh",
+      "description": "Just a dummy travel plan to Kashmir",
+      "link": "https:/www.google.com",
+      "hashtags": "#india#northindia",
+      "isdone": "no"
+    },
+    {
+      "title": "Ladakh",
+      "description": "Just a dummy travel plan to Kashmir",
+      "link": "https:/www.google.com",
+      "hashtags": "#india#northindia",
+      "isdone": "no"
+    },
+    {
+      "title": "Himalaya",
+      "description": "Just a dummy travel plan to Kashmir",
+      "link": "https:/www.google.com",
+      "hashtags": "#india#northindia",
+      "isdone": "no"
+    },
+    {
+      "title": "Himachal",
+      "description": "Just a dummy travel plan to Kashmir",
+      "link": "https:/www.google.com",
+      "hashtags": "#india#northindia",
+      "isdone": "no"
+    },
+    {
+      "title": "Srinagar",
+      "description": "Just a dummy travel plan to Kashmir",
+      "link": "https:/www.google.com",
+      "hashtags": "#india#northindia",
+      "isdone": "no"
+    },
+    {
+      "title": "Spiti Valley",
+      "description": "Just a dummy travel plan to Kashmir",
+      "link": "https:/www.google.com",
+      "hashtags": "#india#northindia",
+      "isdone": "yes"
+    },
+    {
+      "title": "Gulmarg",
+      "description": "Just a dummy travel plan to Kashmir",
+      "link": "https:/www.google.com",
+      "hashtags": "#india#northindia",
+      "isdone": "yes"
+    }
+  ]
