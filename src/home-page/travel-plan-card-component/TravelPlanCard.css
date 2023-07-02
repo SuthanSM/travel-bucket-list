@@ -1,0 +1,14 @@
+.travel-plan-card {
+    cursor: pointer;
+}
+
+.hashtag {
+    background-color: lightgreen;
+    color: green;
+    border-radius: 10%;
+    margin: 1%;
+}
+
+.card {
+    width: 18rem;
+}

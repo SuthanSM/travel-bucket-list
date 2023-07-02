@@ -12,10 +12,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <div className='container mt-3'>
+    <div className='container'>
       <App />
         <Routes>
           <Route path='/' element={<ViewTravelPlans />} />
+          <Route path='/travel-bucket-list' element={<ViewTravelPlans />} />
           <Route path='/login' element={<Login />} />
           <Route path='/home' element={<ViewTravelPlans />} />
           <Route path='/addplan' element={<AddTravelPlan />} />

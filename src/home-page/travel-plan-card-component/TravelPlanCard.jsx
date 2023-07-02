@@ -1,16 +1,30 @@
-import Card from 'react-bootstrap/Card';
+import './TravelPlanCard.css';
 
-function TravelPlanCard({ travelPlanData }) {
+function TravelPlanCard(props) {
+
+  const handleCardClick = (link) => {
+    // window.open(link, '_blank');
+  };
+
+  const hashtags = props.travelPlanData.hashtags.split(' ')
+                                          .map(hashtag => {
+                                            hashtag = hashtag !== '' ? hashtag + ' ' : '';
+                                            return hashtag;
+                                          });
+
   return (
-    <div className='travel-plan-card'>
-      <Card style={{ width: '18rem' }}>
-        <Card.Body>
-          <Card.Title>{travelPlanData.title}</Card.Title>
-          <Card.Text>{travelPlanData.description}</Card.Text>
-          <Card.Link href="#">{travelPlanData.link}</Card.Link>
-          <Card.Footer>{travelPlanData.hashtags}</Card.Footer>
-        </Card.Body>
-      </Card>
+    <div className='travel-plan-card' onClick={() => handleCardClick(props.travelPlanData.link)}>
+      <div className='card'>
+        <div className='card-body'>
+          <h5 className='card-title'>{props.travelPlanData.title}</h5>
+          <p className='card-text'>{props.travelPlanData.description}</p>
+          <div className='card-footer text-muted'>
+            {hashtags.map(hashtag => 
+              <i className='hashtag' key={hashtag} onClick={() => props.handleHashtagClick(hashtag)}>{ hashtag }</i>
+            )}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -3,14 +3,14 @@ import './App.css';
 
 function App() {
   const location = useLocation();
-  const isHome = location.pathname === '/home';
+  const isHome = location.pathname === '/home' || location.pathname === '/' || location.pathname === '/travel-bucket-list';
 
   return (
-    <div className='mb-3 d-flex'>
-      <h1>Hello Kittuu, this is our travel bucket list</h1>
-      <div className='nav'>
-        {!isHome && <Link className='btn btn-lg btn-dark m-2' to="/home">View Travel Plans</Link>}
-        {isHome && <Link className='btn btn-lg btn-dark m-2' to="/addplan">Add Travel Plan</Link>}
+    <div className='flex-container'>
+      <h1 className='flex-item-left'>Hello Suthan, this is your travel bucket list</h1>
+      <div className='flex-item-right'>
+        {!isHome && <Link className='btn btn-lg btn-dark' to="/home">View Travel Plans</Link>}
+        {isHome && <Link className='btn btn-lg btn-dark' to="/addplan">Add Travel Plan</Link>}
       </div>
     </div>
   );
