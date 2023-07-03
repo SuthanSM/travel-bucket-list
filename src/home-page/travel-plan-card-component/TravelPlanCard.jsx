@@ -3,7 +3,7 @@ import './TravelPlanCard.css';
 function TravelPlanCard(props) {
 
   const handleCardClick = (link) => {
-    // window.open(link, '_blank');
+    window.open(link, '_blank');
   };
 
   const hashtags = props.travelPlanData.hashtags.split(' ')

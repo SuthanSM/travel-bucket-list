@@ -15,8 +15,7 @@ root.render(
     <div className='container'>
       <App />
         <Routes>
-          <Route path='/' element={<ViewTravelPlans />} />
-          <Route path='/home' element={<ViewTravelPlans />} />
+          <Route path='/travel-bucket-list' element={<ViewTravelPlans />} />
           <Route path='/login' element={<Login />} />
           <Route path='/addplan' element={<AddTravelPlan />} />
         </Routes>

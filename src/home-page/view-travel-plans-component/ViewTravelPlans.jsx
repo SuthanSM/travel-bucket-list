@@ -51,9 +51,9 @@ function ViewTravelPlans() {
         />
       </div>
 
-      <div className='row'>
+      <div className='view-travel-plans-grid'>
       {filteredTravelPlansData.map(c => 
-          <div className='col mb-5' key={c.title}>
+          <div className='mb-5' key={c.title}>
             <TravelPlanCard travelPlanData={c} handleHashtagClick={hashtag => setFilter(hashtag)} />
           </div>
       )}
